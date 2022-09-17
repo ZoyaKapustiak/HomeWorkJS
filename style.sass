@@ -1,0 +1,53 @@
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: "Lato", sans-serif
+
+a
+    text-decoration: none
+
+.center
+    padding-left: calc(50% - 758px)
+    padding-right: calc(50% - 758px)
+
+.header
+    &Nav
+        display: flex
+        justify-content: space-between
+        margin: 10px
+        align-items: center
+    &MainPage
+        color: #2a2929
+    &Cart
+        padding: 5px
+
+.products
+    display: flex
+    gap: 10px
+    flex-wrap: wrap
+    margin-top: 10px
+    justify-content: space-evenly
+
+.product
+    box-sizing: border-box
+    box-shadow: 5px 2px 30px grey
+    padding: 25px
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    background: #F8F8F8
+    max-width: 300px
+    &Title
+        color: #2a2929
+    &Price
+        color: #F16D7F
+    &Button
+        padding: 5px
+        transition: all .3s
+        &:hover
+            color: #F16D7F
+    &Img
+        max-width: -webkit-fill-available
